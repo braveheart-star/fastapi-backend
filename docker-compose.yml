@@ -3,5 +3,7 @@ services:
   core_api:
     build: .
     container_name: 'query-build-container'
-    ports: - "8000:15400"
-    volumes: - ./app/:/app
+    ports:
+      - '8000:80'
+    volumes:
+      - ./app/:/app
